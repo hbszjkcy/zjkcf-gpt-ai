@@ -828,7 +828,7 @@ function getHTML() {
             <h1>🤖 CF AI Chat</h1>
             <p>支持多模型切换的智能聊天助手</p>
             <div class="author-info" ('https://gpt.cmtd.indevs.in/')">
-                <p>作者：<strong>MY:GPT</strong></p>
+               // <p>算例白嫖:<strong>MY:GPT</strong></p>
             </div>
         </div>
         <div class="main-content">
