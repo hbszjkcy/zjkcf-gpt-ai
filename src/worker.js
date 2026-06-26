@@ -11,7 +11,7 @@ function verifyAuthorInfo() {
   if (AUTHOR_INFO.name !== "GPT" || 
       AUTHOR_INFO.platform !== "MY" || 
       !AUTHOR_INFO.verified) {
-    throw new Error("作者信息已被篡改，服务拒绝运行！请保持原始作者信息：MY：GPT");
+    throw new Error("作者信息已被篡改，服务拒绝运行！请保持原始作者信息：MY:GPT");
   }
 }
 
@@ -886,9 +886,9 @@ function getHTML() {
                 }
                 
                 for (let element of authorElements) {
-                    if (!element.textContent.includes('MY：GPT')) {
+                    if (!element.textContent.includes('MY:GPT')) {
                         alert('作者信息已被篡改，服务将停止运行！');
-                        document.body.innerHTML = '<div style="text-align:center;margin-top:50px;"><h1>❌ 服务已停止</h1><p>作者信息被篡改，请保持原始作者信息：MY：GPT</p></div>';
+                        document.body.innerHTML = '<div style="text-align:center;margin-top:50px;"><h1>❌ 服务已停止</h1><p>作者信息被篡改，请保持原始作者信息：MY:GPT</p></div>';
                         return false;
                     }
                 }
