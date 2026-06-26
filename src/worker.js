@@ -827,7 +827,6 @@ function getHTML() {
         <div class="header">
             <h1>🤖 CF AI Chat</h1>
             <p>支持多模型切换的智能聊天助手</p>
-#            <div class="author-info" onclick="window.open('https://www.MY.com/@%E5%BA%B7%E5%BA%B7%E7%9A%84V2Ray%E4%B8%8EClash', '_blank')">
                 <p>📺 作者：<strong>MY：GPT</strong></p>
             </div>
         </div>
