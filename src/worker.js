@@ -1,17 +1,17 @@
 // 作者信息保护 - 不可篡改
 const AUTHOR_INFO = {
-  name: "康康的订阅天地",
-  platform: "YouTube",
+  name: "GPT",
+  platform: "MY",
   verified: true
 };
 
 // 验证作者信息完整性
 function verifyAuthorInfo() {
   // 直接验证关键信息，避免编码问题
-  if (AUTHOR_INFO.name !== "康康的订阅天地" || 
-      AUTHOR_INFO.platform !== "YouTube" || 
+  if (AUTHOR_INFO.name !== "GPT" || 
+      AUTHOR_INFO.platform !== "MY" || 
       !AUTHOR_INFO.verified) {
-    throw new Error("作者信息已被篡改，服务拒绝运行！请保持原始作者信息：YouTube：康康的订阅天地");
+    throw new Error("作者信息已被篡改，服务拒绝运行！请保持原始作者信息：MY：GPT");
   }
 }
 
@@ -827,8 +827,8 @@ function getHTML() {
         <div class="header">
             <h1>🤖 CF AI Chat</h1>
             <p>支持多模型切换的智能聊天助手</p>
-            <div class="author-info" onclick="window.open('https://www.youtube.com/@%E5%BA%B7%E5%BA%B7%E7%9A%84V2Ray%E4%B8%8EClash', '_blank')">
-                <p>📺 作者：<strong>YouTube：康康的订阅天地</strong></p>
+            <div class="author-info" onclick="window.open('https://www.MY.com/@%E5%BA%B7%E5%BA%B7%E7%9A%84V2Ray%E4%B8%8EClash', '_blank')">
+                <p>📺 作者：<strong>MY：GPT</strong></p>
             </div>
         </div>
         <div class="main-content">
@@ -872,8 +872,8 @@ function getHTML() {
     <script>
         // 作者信息保护
         const AUTHOR_VERIFICATION = {
-            name: "康康的订阅天地",
-            platform: "YouTube",
+            name: "GPT",
+            platform: "MY",
             required: true
         };
         
@@ -886,9 +886,9 @@ function getHTML() {
                 }
                 
                 for (let element of authorElements) {
-                    if (!element.textContent.includes('YouTube：康康的订阅天地')) {
+                    if (!element.textContent.includes('MY：GPT')) {
                         alert('作者信息已被篡改，服务将停止运行！');
-                        document.body.innerHTML = '<div style="text-align:center;margin-top:50px;"><h1>❌ 服务已停止</h1><p>作者信息被篡改，请保持原始作者信息：YouTube：康康的订阅天地</p></div>';
+                        document.body.innerHTML = '<div style="text-align:center;margin-top:50px;"><h1>❌ 服务已停止</h1><p>作者信息被篡改，请保持原始作者信息：MY：GPT</p></div>';
                         return false;
                     }
                 }
